@@ -1,11 +1,13 @@
 """
-이 파일은 data 폴더의 corpus.json 파일을 preprocessing합니다.
+이 파일은 data 폴더의 말뭉치 json 파일을 preprocessing합니다.
 """
 
 
-import json
+import orjson
 from collections import defaultdict
-# from copy import deepcopy
+import copy
+from halo import Halo
+import time
 from collections import Counter
 
 S_total_count = defaultdict(int) # 접미 형태소열 S가 등장한 총 횟수입니다.
@@ -26,10 +28,20 @@ S_total_count와 S_noun_count 두 개만 있으면 기본적인 P(N=1|S)는 구�
 input_path = 'data/corpus.json'
 output_path = 'data/model_data.json'
 
+spinner = Halo(text='말뭉치 로딩 및 파싱 중입니다...')
+spinner.start()
+
 with open(input_path, 'r', encoding='utf8') as f:
-    data = json.load(f)
+
+    
+    with open(input_path, 'rb') as f:
+        data = orjson.loads(f.read())
 
     docs = data['document']
+
+    spinner.succeed('json 파일 로드가 완료되었습니다.')
+    spinner = Halo(text='형태소들을 전처리하고 있습니다...')
+    spinner.start()
 
     for doc in docs:
         senteces = doc['sentence']
@@ -122,14 +134,19 @@ with open(input_path, 'r', encoding='utf8') as f:
                 s_noun_map[S].add(N)
                 noun_s_map[N].add(S)
 
-                
+
+spinner.succeed('형태소 전처리가 완료되었습니다.')
+spinner = Halo(text='공기 빈도를 계산 중입니다...')
+spinner.start()        
+        
 # 공기 빈도를 계산한 뒤 최대 상위 K개의 SB를 저장합니다.
 all_S = list(S_total_count.keys())
 
 
 """
-# 작동은 하겠지만, 삼중 for문 안에 set & 연산 들어가 있는 게 시간복잡도가 정말 끔찍할 것 같은 느낌이 들어서 폐기한 알고리즘입니다.
+# 작동은 하지만, 삼중 for문 안에 교집합 연산 들어가 있는 게 시간복잡도가 높아 대체한 알고리즘입니다.
 
+start  = time.time()
 for S in all_S:
     checked_SBs = set()
     SB_count_tuples = []
@@ -139,9 +156,8 @@ for S in all_S:
             if SB in checked_SBs:
                 continue
 
-            ★-------------------------------★
             count = len(s_noun_map[S] & s_noun_map[SB])
-            ★-------------------------------★
+
 
             SB_count_tuples.append((SB, count))
             checked_SBs.add(SB)
@@ -149,9 +165,11 @@ for S in all_S:
     sorted_tuples = sorted(SB_count_tuples, key=lambda p: p[1], reverse=True)
     sorted_tuples = sorted_tuples[:K]
     co_occurrence_frequencies[S] = copy.deepcopy(sorted_tuples)
+end = time.time()
 
 """
 
+# Counter를 사용해 연산 속도를 줄였습니다.
 for i, S in enumerate(all_S):
     sb_counter = Counter()
 
@@ -165,9 +183,12 @@ for i, S in enumerate(all_S):
     top_k_SBs = sb_counter.most_common(K)
     co_occurrence_frequencies[S] = top_k_SBs
 
+
 # print(co_occurrence_frequencies['를/JKO']) # 테스트용
 
-print("JSON 파일로 저장 중...")
+spinner.succeed('공기 빈도 계산이 완료되었습니다.')
+spinner = Halo(text='전처리된 데이터를 JSON 파일로 저장합니다...')
+spinner.start()
 
 output_data = {
     "S_total_count": S_total_count,
@@ -179,7 +200,11 @@ output_data = {
     }
 }
 
-with open(output_path, 'w', encoding='utf8') as f:
-    json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-print(f"저장 완료! ({output_path})")
+with open(output_path, 'wb') as f:
+    f.write(orjson.dumps(
+        output_data, 
+        option=orjson.OPT_INDENT_2
+    ))
+
+spinner.succeed(f"모든 과정이 완료되었습니다. 저장 위치 --> ({output_path})")

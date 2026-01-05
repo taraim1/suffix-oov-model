@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# 추가
+/data/NXMP1902008040.json
+/data/model_data.json
