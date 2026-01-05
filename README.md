@@ -11,6 +11,8 @@
 ## 📝 프로젝트 소개 (Introduction)
 
 성결대학교 **한경수** 교수님의 2019년 논문 <[**접미 형태소열 기반 미등록어 인식 확률 모델**](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08010172)>을 바탕으로, 딥러닝 없이 통계적 기법만으로 미등록어를 탐지하는 시스템을 Python으로 구현하는 프로젝트입니다.
+
+
 <br><br>
 ### 🎯 핵심 목표
 -   **논문의 수식 구현:** 조건부 확률 수식을 코드로 구현
@@ -127,6 +129,14 @@ python preprocess.py
 
 -   **한경수**, 홍혁준, 지한솔. (2019). **접미 형태소열 기반 미등록어 인식 확률 모델**. 디지털콘텐츠학회논문지, 20(4), 843-850.
 
+
+<br><br>
+
+
+## 📢 활용 데이터셋 저작권 및 출처 (Dataset Acknowledgement)
+본 프로젝트의 실험 및 모델 학습에는 **국립국어원(National Institute of Korean Language)**에서 구축하여 배포한 **[형태 분석 말뭉치]**가 활용되었습니다.
+귀중한 언어 자원을 연구 목적으로 공개해 주신 **국립국어원 언어정보나눔터**에 깊은 감사를 표합니다.
+-   출처: [국립국어원 모두의 말뭉치](https://kli.korean.go.kr/corpus/main/requestMain.do?lang=ko)
 
 <br><br>
 
