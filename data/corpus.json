@@ -1,0 +1,300 @@
+{
+  "id": "SAMPLE_CORPUS_2024_FULL",
+  "metadata": {
+    "title": "미등록어 인식 모델 테스트용 말뭉치",
+    "description": "간단한 예시가 들어있습니다.",
+    "author": "김제율"
+  },
+  "document": [
+    {
+      "id": "DOC_001",
+      "metadata": {},
+      "sentence": [
+        {
+          "id": "S1",
+          "form": "인공지능이 세상을 바꾼다.",
+          "word": [
+            { "id": 1, "form": "인공지능이", "begin": 0, "end": 5 },
+            { "id": 2, "form": "세상을", "begin": 6, "end": 9 },
+            { "id": 3, "form": "바꾼다.", "begin": 10, "end": 14 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "인공지능", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "이", "label": "JKS", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "세상", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "을", "label": "JKO", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "바꾸", "label": "VV", "word_id": 3, "position": 1 },
+            { "id": 6, "form": "ㄴ다", "label": "EF", "word_id": 3, "position": 2 },
+            { "id": 7, "form": ".", "label": "SF", "word_id": 3, "position": 3 }
+          ]
+        },
+        {
+          "id": "S2",
+          "form": "인공지능을 공부한다.",
+          "word": [
+            { "id": 1, "form": "인공지능을", "begin": 0, "end": 5 },
+            { "id": 2, "form": "공부한다.", "begin": 6, "end": 11 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "인공지능", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "을", "label": "JKO", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "공부", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "하", "label": "XSV", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "ㄴ다", "label": "EF", "word_id": 2, "position": 3 },
+            { "id": 6, "form": ".", "label": "SF", "word_id": 2, "position": 4 }
+          ]
+        },
+        {
+          "id": "S3",
+          "form": "인공지능에서 새로운 기술이 나왔다.",
+          "word": [
+            { "id": 1, "form": "인공지능에서", "begin": 0, "end": 6 },
+            { "id": 2, "form": "새로운", "begin": 7, "end": 10 },
+            { "id": 3, "form": "기술이", "begin": 11, "end": 14 },
+            { "id": 4, "form": "나왔다.", "begin": 15, "end": 19 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "인공지능", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "에서", "label": "JKB", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "새롭", "label": "VA", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "ㄴ", "label": "ETM", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "기술", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 6, "form": "이", "label": "JKS", "word_id": 3, "position": 2 },
+            { "id": 7, "form": "나오", "label": "VV", "word_id": 4, "position": 1 },
+            { "id": 8, "form": "았", "label": "EP", "word_id": 4, "position": 2 },
+            { "id": 9, "form": "다", "label": "EF", "word_id": 4, "position": 3 },
+            { "id": 10, "form": ".", "label": "SF", "word_id": 4, "position": 4 }
+          ]
+        },
+        {
+          "id": "S4",
+          "form": "인공지능에서는 데이터가 중요하다.",
+          "word": [
+            { "id": 1, "form": "인공지능에서는", "begin": 0, "end": 7 },
+            { "id": 2, "form": "데이터가", "begin": 8, "end": 12 },
+            { "id": 3, "form": "중요하다.", "begin": 13, "end": 18 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "인공지능", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "에서", "label": "JKB", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "는", "label": "JX", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "데이터", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 5, "form": "가", "label": "JKS", "word_id": 2, "position": 2 },
+            { "id": 6, "form": "중요", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "하", "label": "XSA", "word_id": 3, "position": 2 },
+            { "id": 8, "form": "다", "label": "EF", "word_id": 3, "position": 3 },
+            { "id": 9, "form": ".", "label": "SF", "word_id": 3, "position": 4 }
+          ]
+        },
+        {
+          "id": "S5",
+          "form": "데이터가 부족하다.",
+          "word": [
+            { "id": 1, "form": "데이터가", "begin": 0, "end": 4 },
+            { "id": 2, "form": "부족하다.", "begin": 5, "end": 10 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "데이터", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "가", "label": "JKS", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "부족", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "하", "label": "XSA", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "다", "label": "EF", "word_id": 2, "position": 3 },
+            { "id": 6, "form": ".", "label": "SF", "word_id": 2, "position": 4 }
+          ]
+        },
+        {
+          "id": "S6",
+          "form": "데이터를 수집해야 한다.",
+          "word": [
+            { "id": 1, "form": "데이터를", "begin": 0, "end": 4 },
+            { "id": 2, "form": "수집해야", "begin": 5, "end": 9 },
+            { "id": 3, "form": "한다.", "begin": 10, "end": 13 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "데이터", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "를", "label": "JKO", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "수집", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "하", "label": "XSV", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "어야", "label": "EC", "word_id": 2, "position": 3 },
+            { "id": 6, "form": "하", "label": "VX", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "ㄴ다", "label": "EF", "word_id": 3, "position": 2 },
+            { "id": 8, "form": ".", "label": "SF", "word_id": 3, "position": 3 }
+          ]
+        },
+        {
+          "id": "S7",
+          "form": "데이터에서 특징을 추출한다.",
+          "word": [
+            { "id": 1, "form": "데이터에서", "begin": 0, "end": 5 },
+            { "id": 2, "form": "특징을", "begin": 6, "end": 9 },
+            { "id": 3, "form": "추출한다.", "begin": 10, "end": 15 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "데이터", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "에서", "label": "JKB", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "특징", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "을", "label": "JKO", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "추출", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 6, "form": "하", "label": "XSV", "word_id": 3, "position": 2 },
+            { "id": 7, "form": "ㄴ다", "label": "EF", "word_id": 3, "position": 3 },
+            { "id": 8, "form": ".", "label": "SF", "word_id": 3, "position": 4 }
+          ]
+        },
+        {
+          "id": "S8",
+          "form": "데이터에서는 노이즈를 제거한다.",
+          "word": [
+            { "id": 1, "form": "데이터에서는", "begin": 0, "end": 6 },
+            { "id": 2, "form": "노이즈를", "begin": 7, "end": 11 },
+            { "id": 3, "form": "제거한다.", "begin": 12, "end": 17 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "데이터", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "에서", "label": "JKB", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "는", "label": "JX", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "노이즈", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 5, "form": "를", "label": "JKO", "word_id": 2, "position": 2 },
+            { "id": 6, "form": "제거", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "하", "label": "XSV", "word_id": 3, "position": 2 },
+            { "id": 8, "form": "ㄴ다", "label": "EF", "word_id": 3, "position": 3 },
+            { "id": 9, "form": ".", "label": "SF", "word_id": 3, "position": 4 }
+          ]
+        },
+        {
+          "id": "S9",
+          "form": "모델이 성능이 좋다.",
+          "word": [
+            { "id": 1, "form": "모델이", "begin": 0, "end": 3 },
+            { "id": 2, "form": "성능이", "begin": 4, "end": 7 },
+            { "id": 3, "form": "좋다.", "begin": 8, "end": 11 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "모델", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "이", "label": "JKS", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "성능", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "이", "label": "JKS", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "좋", "label": "VA", "word_id": 3, "position": 1 },
+            { "id": 6, "form": "다", "label": "EF", "word_id": 3, "position": 2 },
+            { "id": 7, "form": ".", "label": "SF", "word_id": 3, "position": 3 }
+          ]
+        },
+        {
+          "id": "S10",
+          "form": "모델을 학습시킨다.",
+          "word": [
+            { "id": 1, "form": "모델을", "begin": 0, "end": 3 },
+            { "id": 2, "form": "학습시킨다.", "begin": 4, "end": 10 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "모델", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "을", "label": "JKO", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "학습", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 4, "form": "시키", "label": "XSV", "word_id": 2, "position": 2 },
+            { "id": 5, "form": "ㄴ다", "label": "EF", "word_id": 2, "position": 3 },
+            { "id": 6, "form": ".", "label": "SF", "word_id": 2, "position": 4 }
+          ]
+        },
+        {
+          "id": "S11",
+          "form": "트랜스포머에서는 어텐션이 핵심이다.",
+          "word": [
+            { "id": 1, "form": "트랜스포머에서는", "begin": 0, "end": 8 },
+            { "id": 2, "form": "어텐션이", "begin": 9, "end": 13 },
+            { "id": 3, "form": "핵심이다.", "begin": 14, "end": 19 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "트랜스포머", "label": "NNG", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "에서", "label": "JKB", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "는", "label": "JX", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "어텐션", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 5, "form": "이", "label": "JKS", "word_id": 2, "position": 2 },
+            { "id": 6, "form": "핵심", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "이", "label": "VCP", "word_id": 3, "position": 2 },
+            { "id": 8, "form": "다", "label": "EF", "word_id": 3, "position": 3 },
+            { "id": 9, "form": ".", "label": "SF", "word_id": 3, "position": 4 }
+          ]
+        },
+        {
+          "id": "S12",
+          "form": "먹었에서는 말이 안 된다.",
+          "word": [
+            { "id": 1, "form": "먹었에서는", "begin": 0, "end": 6 },
+            { "id": 2, "form": "말이", "begin": 7, "end": 9 },
+            { "id": 3, "form": "안", "begin": 10, "end": 11 },
+            { "id": 4, "form": "된다.", "begin": 12, "end": 15 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "먹", "label": "VV", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "었", "label": "EP", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "에서", "label": "JKB", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "는", "label": "JX", "word_id": 1, "position": 4 },
+            { "id": 5, "form": "말", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 6, "form": "이", "label": "JKS", "word_id": 2, "position": 2 },
+            { "id": 7, "form": "안", "label": "MAG", "word_id": 3, "position": 1 },
+            { "id": 8, "form": "되", "label": "VV", "word_id": 4, "position": 1 },
+            { "id": 9, "form": "ㄴ다", "label": "EF", "word_id": 4, "position": 2 },
+            { "id": 10, "form": ".", "label": "SF", "word_id": 4, "position": 3 }
+          ]
+        },
+        {
+          "id": "S13",
+          "form": "신기술은 빠르게 발전한다.",
+          "word": [
+            { "id": 1, "form": "신기술은", "begin": 0, "end": 4 },
+            { "id": 2, "form": "빠르게", "begin": 5, "end": 8 },
+            { "id": 3, "form": "발전한다.", "begin": 9, "end": 14 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "신", "label": "XPN", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "기술", "label": "NNG", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "은", "label": "JX", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "빠르", "label": "VA", "word_id": 2, "position": 1 },
+            { "id": 5, "form": "게", "label": "EC", "word_id": 2, "position": 2 },
+            { "id": 6, "form": "발전", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "하", "label": "XSV", "word_id": 3, "position": 2 },
+            { "id": 8, "form": "ㄴ다", "label": "EF", "word_id": 3, "position": 3 },
+            { "id": 9, "form": ".", "label": "SF", "word_id": 3, "position": 4 }
+          ]
+        },
+        {
+          "id": "S14",
+          "form": "옛날의 추억이다.",
+          "word": [
+            { "id": 1, "form": "옛날의", "begin": 0, "end": 3 },
+            { "id": 2, "form": "추억이다.", "begin": 4, "end": 9 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "옛", "label": "MM", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "날", "label": "NNG", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "의", "label": "JKG", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "추억", "label": "NNG", "word_id": 2, "position": 1 },
+            { "id": 5, "form": "이", "label": "VCP", "word_id": 2, "position": 2 },
+            { "id": 6, "form": "다", "label": "EF", "word_id": 2, "position": 3 },
+            { "id": 7, "form": ".", "label": "SF", "word_id": 2, "position": 4 }
+          ]
+        },
+        {
+          "id": "S15",
+          "form": "초연결사회는 이미 시작되었다.",
+          "word": [
+            { "id": 1, "form": "초연결사회는", "begin": 0, "end": 6 },
+            { "id": 2, "form": "이미", "begin": 7, "end": 9 },
+            { "id": 3, "form": "시작되었다.", "begin": 10, "end": 16 }
+          ],
+          "morpheme": [
+            { "id": 1, "form": "초", "label": "XPN", "word_id": 1, "position": 1 },
+            { "id": 2, "form": "연결", "label": "NNG", "word_id": 1, "position": 2 },
+            { "id": 3, "form": "사회", "label": "NNG", "word_id": 1, "position": 3 },
+            { "id": 4, "form": "는", "label": "JX", "word_id": 1, "position": 4 },
+            { "id": 5, "form": "이미", "label": "MAG", "word_id": 2, "position": 1 },
+            { "id": 6, "form": "시작", "label": "NNG", "word_id": 3, "position": 1 },
+            { "id": 7, "form": "되", "label": "XSV", "word_id": 3, "position": 2 },
+            { "id": 8, "form": "었", "label": "EP", "word_id": 3, "position": 3 },
+            { "id": 9, "form": "다", "label": "EF", "word_id": 3, "position": 4 },
+            { "id": 10, "form": ".", "label": "SF", "word_id": 3, "position": 5 }
+          ]
+        }
+      ]
+    }
+  ]
+}
