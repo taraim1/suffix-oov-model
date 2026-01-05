@@ -155,8 +155,6 @@ for S in all_S:
 for i, S in enumerate(all_S):
     sb_counter = Counter()
 
-    associated_nouns = s_noun_map[S]
-
     for N in s_noun_map[S]:
         for SB in noun_s_map[N]:
             if S == SB:
